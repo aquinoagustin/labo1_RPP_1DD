@@ -123,7 +123,7 @@ void menu(eProducto producto[],int tam,eCategoria categoria[],int tamCategoria,i
 				}
 				else
 				{
-					printf("Primero cargue una estadia\n");
+					printf("Primero cargue un producto\n");
 				}
 				systemPause();
 				break;
