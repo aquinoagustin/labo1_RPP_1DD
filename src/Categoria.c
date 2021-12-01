@@ -48,13 +48,36 @@ int categoria_mostrarTodos(eCategoria categoria[],int tamCategoria)
 {
 	clear();
 	int ok=-1;
+	printf("-------------------------------\n");
 	printf("ID		NOMBRE\n");
+	printf("-------------------------------\n");
 	for(int i=0;i<tamCategoria;i++)
 	{
 		if(categoria[i].isEmpty==0)
 		{
+			printf("-------------------------------\n");
 			categoria_mostrarUno(categoria[i]);
+			printf("-------------------------------\n");
 		}
 	}
 	return ok;
+}
+
+void categoria_listadoCategoriaProducto(eCategoria categoria[],int tamCategoria,eProducto producto[],int tam)
+{
+
+	for(int i=0;i<tamCategoria;i++)
+	{
+		printf("-----------------------------------------------------------------------------------\n");
+		printf("%s\n-----------------------------------------------------------------------------------\n\n",categoria[i].nombre);
+		for(int j=0;j<tam;j++)
+		{
+			if(categoria[i].id==producto[j].idCategoria)
+			{
+				printf("-----------------------------------------------------------------------------------\n");
+				producto_mostrarUno(producto[j],categoria[i]);
+				printf("-----------------------------------------------------------------------------------\n");
+			}
+		}
+	}
 }

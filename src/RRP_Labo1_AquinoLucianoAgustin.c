@@ -18,6 +18,7 @@ int main(void) {
 	categoria_inicializarCategoria(categoria,TAMCategoria);
 	producto_inicializarProducto(producto,TAM);
 	categoria_hardcodearCategorias(categoria);
+	producto_hardcodearProducto(producto);
 	int id=999;
 	menu(producto,TAM,categoria,TAMCategoria,&id);
 	return EXIT_SUCCESS;
@@ -138,7 +139,7 @@ void menu(eProducto producto[],int tam,eCategoria categoria[],int tamCategoria,i
 				break;
 			case 7:
 				clear();
-
+				categoria_listadoCategoriaProducto(categoria,tamCategoria,producto,tam);
 				systemPause();
 				break;
 			case 8:

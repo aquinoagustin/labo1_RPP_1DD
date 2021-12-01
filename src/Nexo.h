@@ -15,4 +15,6 @@ int producto_altaProducto(eProducto producto[],int tam,eCategoria categoria[],in
 void producto_mostrarTodas(eProducto producto[],int tam,eCategoria categoria[],int tamCategoria);
 int producto_modificarProducto(eProducto producto[],int tam,eCategoria categoria[],int tamCategoria,int id);
 int producto_eliminarProducto(eProducto producto[],int tam,eCategoria categoria[],int tamCategoria,int id);
+void producto_mostrarUno(eProducto producto,eCategoria categoria);
+void categoria_listadoCategoriaProducto(eCategoria categoria[],int tamCategoria,eProducto producto[],int tam);
 #endif /* NEXO_H_ */

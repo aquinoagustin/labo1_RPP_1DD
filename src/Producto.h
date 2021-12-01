@@ -18,4 +18,7 @@ int producto_sortProducto(eProducto producto[],int tam);
 int producto_encontrarPorId(eProducto producto[],int tam,int id);
 void producto_promedioPrecios(eProducto producto[],int tam);
 int producto_espacioDisponible(eProducto producto[],int tam);
+void producto_hardcodearProducto(eProducto producto[]);
+void producto_mostrarUnoSolo(eProducto producto);
+void producto_mostrarTodasSolo(eProducto producto[],int tam);
 #endif /* PRODUCTO_H_ */
